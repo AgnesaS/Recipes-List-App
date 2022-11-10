@@ -10,7 +10,48 @@ import SwiftUI
 struct RecipesDetailsView: View {
     var recipes: RecipesModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            
+            VStack(alignment: .leading){
+                
+                //MARK: Images
+                Image(recipes.image)
+                    .resizable()
+                    .scaledToFill()
+                
+                //MARK: Ingredients
+                VStack(alignment: .leading){
+                    Text("Ingredients")
+                        .font(.headline)
+                        .padding(.bottom,5)
+                    
+                    ForEach(recipes.ingredients, id: \.self){ item in
+                        Text("• " + item)
+                            .padding(.bottom, 1)
+                        
+                    }
+                }
+                .padding(.horizontal)
+                
+                //MARK: Devider
+                Divider()
+                //MARK: Directions
+                VStack(alignment: .leading) {
+                    Text("Directions")
+                        .font(.headline)
+                        .padding(.bottom, 5)
+                    ForEach(0...recipes.directions.count-1, id: \.self){ index in
+                        Text(String(index+1)+". " + recipes.directions[index])
+                            .padding(.bottom, 5)
+                        
+                    }
+                }
+                .padding(.horizontal)
+            }
+            
+          
+        }
+        .navigationBarTitle(recipes.name)
     }
 }
 
