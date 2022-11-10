@@ -8,7 +8,7 @@
 import Foundation
 
 class RecipesViewModel{
-     var recipes = [RecipesModel]()
+    var recipes = [RecipesModel]()
     
     init(){
         self.recipes = DataService.getLocalData()
