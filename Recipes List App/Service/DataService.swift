@@ -9,7 +9,7 @@ import Foundation
 
 class DataService: Decodable{
     
-    func getLocalData() -> [RecipesModel]{
+    static func getLocalData() -> [RecipesModel]{
         
         //Get a url path to the json file
         let pathString = Bundle.main.path(forResource: "recipes", ofType: "json")

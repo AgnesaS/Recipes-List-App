@@ -11,7 +11,6 @@ class RecipesViewModel{
      var recipes = [RecipesModel]()
     
     init(){
-        let data = DataService()
-        self.recipes = DataService().getLocalData()
+        self.recipes = DataService.getLocalData()
     }
 }
