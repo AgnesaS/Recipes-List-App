@@ -16,6 +16,7 @@
 		4D89A90D291D17C800E00778 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89A90C291D17C800E00778 /* RecipesViewModel.swift */; };
 		4D89A90F291D181E00E00778 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89A90E291D181E00E00778 /* RecipesModel.swift */; };
 		4D89A911291D201A00E00778 /* RecipesDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89A910291D201A00E00778 /* RecipesDetailsView.swift */; };
+		4DD2D30A291D46550082E58D /* RecipesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2D309291D46550082E58D /* RecipesTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		4D89A90C291D17C800E00778 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
 		4D89A90E291D181E00E00778 /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
 		4D89A910291D201A00E00778 /* RecipesDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDetailsView.swift; sourceTree = "<group>"; };
+		4DD2D309291D46550082E58D /* RecipesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		4D89A905291D139500E00778 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4DD2D309291D46550082E58D /* RecipesTabView.swift */,
 				4D89A8F7291D137600E00778 /* RecipesListView.swift */,
 				4D89A910291D201A00E00778 /* RecipesDetailsView.swift */,
 			);
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD2D30A291D46550082E58D /* RecipesTabView.swift in Sources */,
 				4D89A90D291D17C800E00778 /* RecipesViewModel.swift in Sources */,
 				4D89A911291D201A00E00778 /* RecipesDetailsView.swift in Sources */,
 				4D89A90B291D166A00E00778 /* DataService.swift in Sources */,

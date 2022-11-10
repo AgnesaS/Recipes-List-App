@@ -11,9 +11,7 @@ struct RecipesDetailsView: View {
     var recipes: RecipesModel
     var body: some View {
         ScrollView{
-            
             VStack(alignment: .leading){
-                
                 Image(recipes.image)
                     .resizable()
                     .scaledToFill()
