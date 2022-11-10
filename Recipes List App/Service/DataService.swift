@@ -26,6 +26,10 @@ class DataService: Decodable{
             //Add unique IDs
             for r in recipesData{
                 r.id = UUID()
+               //Add unique to ingredients
+                for a in r.ingredients{
+                    a.id = UUID()
+                }
             }
             return recipesData
         }
