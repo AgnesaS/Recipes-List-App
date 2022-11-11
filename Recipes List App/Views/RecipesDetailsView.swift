@@ -12,9 +12,12 @@ struct RecipesDetailsView: View {
     var body: some View {
         ScrollView{
             VStack(alignment: .leading){
+                
                 Image(recipes.image)
                     .resizable()
                     .scaledToFill()
+                    .padding()
+                    .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.6), radius: 10, x: -5, y: 5)
                 VStack(alignment: .leading){
                     Text("Ingredients")
                         .font(.headline)
