@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RecipesViewModel{
+class RecipesViewModel: ObservableObject{
     var recipes = [RecipesModel]()
     
     init(){

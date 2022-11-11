@@ -9,11 +9,11 @@ import SwiftUI
 
 struct RecipesListView: View {
     
-    var model = RecipesViewModel()
+    @EnvironmentObject var viewModel: RecipesViewModel
     var body: some View {
         
         NavigationView {
-            List(model.recipes){ r in
+            List(viewModel.recipes){ r in
                 
                 NavigationLink(destination:{ RecipesDetailsView(recipes: r)}, label: {
                     HStack(spacing: 20.0){

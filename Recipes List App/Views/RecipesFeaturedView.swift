@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RecipesFeaturedView: View {
+    
+    @EnvironmentObject var viewModel: RecipesViewModel
     var body: some View {
         Text("Featured View")
     }
