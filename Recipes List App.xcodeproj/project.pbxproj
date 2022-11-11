@@ -16,6 +16,7 @@
 		4D89A90D291D17C800E00778 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89A90C291D17C800E00778 /* RecipesViewModel.swift */; };
 		4D89A90F291D181E00E00778 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89A90E291D181E00E00778 /* RecipesModel.swift */; };
 		4D89A911291D201A00E00778 /* RecipesDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89A910291D201A00E00778 /* RecipesDetailsView.swift */; };
+		4D8E38CE291E8083004CB412 /* RecipesFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8E38CD291E8083004CB412 /* RecipesFeaturedView.swift */; };
 		4DD2D30A291D46550082E58D /* RecipesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2D309291D46550082E58D /* RecipesTabView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		4D89A90C291D17C800E00778 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
 		4D89A90E291D181E00E00778 /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
 		4D89A910291D201A00E00778 /* RecipesDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDetailsView.swift; sourceTree = "<group>"; };
+		4D8E38CD291E8083004CB412 /* RecipesFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesFeaturedView.swift; sourceTree = "<group>"; };
 		4DD2D309291D46550082E58D /* RecipesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				4DD2D309291D46550082E58D /* RecipesTabView.swift */,
+				4D8E38CD291E8083004CB412 /* RecipesFeaturedView.swift */,
 				4D89A8F7291D137600E00778 /* RecipesListView.swift */,
 				4D89A910291D201A00E00778 /* RecipesDetailsView.swift */,
 			);
@@ -198,6 +201,7 @@
 			files = (
 				4DD2D30A291D46550082E58D /* RecipesTabView.swift in Sources */,
 				4D89A90D291D17C800E00778 /* RecipesViewModel.swift in Sources */,
+				4D8E38CE291E8083004CB412 /* RecipesFeaturedView.swift in Sources */,
 				4D89A911291D201A00E00778 /* RecipesDetailsView.swift in Sources */,
 				4D89A90B291D166A00E00778 /* DataService.swift in Sources */,
 				4D89A90F291D181E00E00778 /* RecipesModel.swift in Sources */,
