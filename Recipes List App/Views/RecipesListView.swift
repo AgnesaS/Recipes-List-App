@@ -13,28 +13,41 @@ struct RecipesListView: View {
     var body: some View {
         
         NavigationView {
-            List(viewModel.recipes){ r in
-                
-                NavigationLink(destination:{ RecipesDetailsView(recipes: r)}, label: {
-                    HStack(spacing: 20.0){
-                        Image(r.image)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 50, height: 50, alignment: .center)
-                            .clipped()
-                            .cornerRadius(5)
-                        Text(r.name)
+            
+            VStack(alignment: .leading){
+                Text("All Recipes")
+                    .bold()
+                    .padding(.top, 40)
+                    .font(.largeTitle)
+                ScrollView{
+                    LazyVStack(alignment: .leading){
+                        ForEach(viewModel.recipes){ r in
+                            
+                            NavigationLink(destination:{ RecipesDetailsView(recipes: r)}, label: {
+                                HStack(spacing: 20.0){
+                                    Image(r.image)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 50, height: 50, alignment: .center)
+                                        .clipped()
+                                        .cornerRadius(5)
+                                    Text(r.name)
+                                        .foregroundColor(.black)
+                                }
+                            })
+                        }
                     }
-                })
-                
-                
+                }
             }
+            .navigationBarHidden(true)
         }
+        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         RecipesListView()
+            .environmentObject(RecipesViewModel())
     }
 }
