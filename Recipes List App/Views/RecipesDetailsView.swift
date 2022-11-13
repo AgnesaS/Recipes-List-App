@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct RecipesDetailsView: View {
-    @State var selectedIndex = 2
+    
+    @EnvironmentObject var viewModel: RecipesViewModel
     var recipes: RecipesModel
+    @State var selectedIndex = 2
+    
     var body: some View {
         ScrollView{
             VStack(alignment: .leading){
@@ -22,29 +25,24 @@ struct RecipesDetailsView: View {
                 VStack(alignment: .leading){
     
                 Text("Choose your serving size")
-                        .padding(.leading,20)
-                    Picker("Tap me", selection:$selectedIndex){
+                    Picker("Tap me", selection: $selectedIndex){
                         Text("2").tag(2)
                         Text("4").tag(4)
                         Text("6").tag(6)
                         Text("8").tag(8)
                        
                         }
-                        
+                    
                     .pickerStyle(SegmentedPickerStyle())
                     .frame(width: 160)
-                    .padding()
-                
-                    
-                    
                 }
-                
+                .padding()
                 VStack(alignment: .leading){
                     Text("Ingredients")
                         .font(.headline)
                         .padding(.bottom,5)
                     ForEach(recipes.ingredients){ item in
-                        Text("• " + item.name)
+                        Text("• " + RecipesViewModel.getPortion(ingredient: item, recipeServing: recipes.servings, targetServing: selectedIndex) + " " + item.name)
                             .padding(.bottom, 1)
                     }
                 }
