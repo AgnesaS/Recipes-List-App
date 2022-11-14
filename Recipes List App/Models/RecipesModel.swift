@@ -16,6 +16,7 @@ class RecipesModel: Identifiable, Decodable{
     var prepTime:String
     var cookTime:String
     var servings:Int
+    var highlights:[String]
     var ingredients:[Ingredients]
     var directions:[String]
 }
