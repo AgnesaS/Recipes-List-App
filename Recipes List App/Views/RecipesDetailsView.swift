@@ -22,6 +22,10 @@ struct RecipesDetailsView: View {
                     .scaledToFill()
                     .padding()
                     .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.6), radius: 10, x: -5, y: 5)
+                Text(recipes.name)
+                    .bold()
+                    .font(.largeTitle)
+                    .padding(.leading)
                 VStack(alignment: .leading){
     
                 Text("Choose your serving size")
@@ -60,7 +64,7 @@ struct RecipesDetailsView: View {
                 .padding(.horizontal)
             }
         }
-        .navigationBarTitle(recipes.name)
+
     }
 }
 struct RecipesDetailsView_Previews: PreviewProvider {
